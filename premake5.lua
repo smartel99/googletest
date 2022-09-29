@@ -3,6 +3,8 @@ project "gtest"
     kind "StaticLib"
     language "C++"
 
+    cppdialect "C++20"
+
     -- local outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
     targetdir("bin/"..outputdir.."/%{prj.name}")
     objdir("bin-int/"..outputdir.."/%{prj.name}")
